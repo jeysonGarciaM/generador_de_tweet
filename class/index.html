@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Generador de Tweet</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="primeraSecion">
+      <div class="up">
+        <h1>Bienvenido</h1>
+        <div class="contenedorLetra">
+          <h2 id="letra"></h2>
+        </div>
+      </div>
+      <h3 style="text-align: center;">Deja tu comentario</h3>
+    </div>
+    <div class="centrado2">
+      <div class="cajaText"><br>
+        <h4>Escribe tu nombre</h4>
+        <from>
+          <input id="info" type="text" />
+         
+          <form>
+            <textarea id="comment" name="message" maxlength="200" placeholder="Maximo de caracteres 200" onkeyup="countChars(this);"></textarea>
+            <p id="charNum">200 caracteres</p>
+          </form>
+
+
+          <button id="butonenvio" type="button"  onclick="print2()" > Enviar</button>  
+        </from >
+        <p id="paragraph"></p><br>
+
+      </div>
+    </div>
+
+    <script src="App.js"></script>
+  </body>
+</html>
